@@ -8,7 +8,7 @@ public class StringToMorse {
 		    String [] alphabet ={" ","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0"};
 		 //creating string array which stores morse code for corresponding alphabet and number present in alphabet array
 		 //space is take as "|" in morse code
-		    String [] morse = {"|",".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--..", ".----", "..---", "...--", "....-", ".....", "-....", "--...", "---..", "----.", "-----"};		   
+		    String [] morse = {" ",".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--..", ".----", "..---", "...--", "....-", ".....", "-....", "--...", "---..", "----.", "-----"};		   
 		 //creating an input variable to store input given by the user
 		    String input=null;	
 		 //
@@ -29,7 +29,7 @@ public class StringToMorse {
 		    	{
 		    		if(input.toLowerCase().charAt(i)== alphabet[j].charAt(0))
 		    				{
-		    			//ouput morse code where each word is separated by "|"
+		    			//ouput morse code where each word is separated by " "
 		    					output =output+morse[j];
 		    				}		    		
 		    	}
@@ -47,4 +47,5 @@ public class StringToMorse {
 		       
 	}	   
 }
-
+//sample input: Russell Investments
+//ouput for above input:.-...-........-...-.. ..-....-....---.-.-...
